@@ -52,7 +52,7 @@ export default function ShortenerForm() {
           </form>
 
           {shortUrl && (
-            <p className="mt-4">
+            <p className="mt-4 px-3 text-center">
               Shortened:{" "}
               <a
                 href={shortUrl}
