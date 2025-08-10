@@ -33,7 +33,7 @@ export default function ShortenerForm() {
         </div>
 
         {/* Shortener box */}
-        <div className="flex flex-col items-center justify-center h-[300px] w-[400px] border-2 border-black rounded-lg hover:shadow-2xl">
+        <div className="flex flex-col items-center justify-center h-[300px] w-[416px] border-2 border-black rounded-lg hover:shadow-2xl">
           <h1 className="text-3xl font-bold underline mb-6">URL Shortener</h1>
 
           <form onSubmit={handleSubmit} className="flex gap-2">
