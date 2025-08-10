@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/table";
 export default function AdminPage() {
   const [urls, setUrls] = useState([]);
-  const BASE_URL = "http://localhost:5000";
+  const BASE_URL = "https://assignment-1-0omm.onrender.com";
   useEffect(() => {
     axios
       .get(`${BASE_URL}/api/urls`, { withCredentials: true })

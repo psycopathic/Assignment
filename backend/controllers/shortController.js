@@ -12,7 +12,7 @@ export const shortenUrl = async (req, res) => {
     // Prevent duplicates for the same user
     let existing = await Url.findOne({ longUrl, owner: req.user.userId });
     if (existing) {
-      return res.json({ shortUrl: `http://localhost:5000/r/${existing.shortCode}` });
+      return res.json({ shortUrl: `https://assignment-1-0omm.onrender.com/r/${existing.shortCode}` });
     }
 
     const shortCode = nanoid(6);
@@ -24,7 +24,7 @@ export const shortenUrl = async (req, res) => {
 
     await newUrl.save();
 
-    res.status(201).json({ shortUrl: `http://localhost:5000/r/${shortCode}` });
+    res.status(201).json({ shortUrl: `https://assignment-1-0omm.onrender.com/r/${shortCode}` });
   } catch (error) {
     console.error("Error in shortenUrl:", error);
     res.status(500).json({ error: "Server error" });

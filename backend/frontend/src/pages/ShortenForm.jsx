@@ -9,7 +9,7 @@ export default function ShortenerForm() {
   const [shortUrl, setShortUrl] = useState("");
   const navigate = useNavigate();
   const { authUser } = useAuthStore();
-  const BASE_URL = "http://localhost:5000";
+  const BASE_URL = "https://assignment-1-0omm.onrender.com";
 
   const handleSubmit = async (e) => {
     e.preventDefault();

@@ -14,7 +14,7 @@ import { useAuthStore } from "../store/authStore";
 const Dashboard = () => {
     const { authUser } = useAuthStore();
     const[urls,setUrls] = useState([]);
-    const BASE_URL = "http://localhost:5000";
+    const BASE_URL = "https://assignment-1-0omm.onrender.com";
     useEffect(() => {
       if (authUser?._id) {
       axios
